@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/pagebkg3"
+    tools:context=".ShowRecords">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="@drawable/custom_edittext">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medical Record"
+                android:id="@+id/loginText"
+                android:fontFamily="@font/andika_new_basic"
+
+                android:textSize="30sp"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/dark_green"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/record_doctor_name"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="40dp"
+                android:padding="8dp"
+                android:text="Doctor"
+                android:fontFamily="@font/andika_new_basic"
+
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:drawablePadding="8dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:id="@+id/record_appointment_date"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/andika_new_basic"
+
+                android:padding="8dp"
+                android:textSize="15sp"
+                android:text="Appointment Date"
+                android:textAlignment="center"
+
+                android:textColor="@color/black"
+                android:drawablePadding="8dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/record_diagnosis_report"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/andika_new_basic"
+
+                android:padding="8dp"
+                android:textSize="15sp"
+                android:text="Diagnosis Report"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:drawablePadding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/record_tablets"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/andika_new_basic"
+
+                android:padding="8dp"
+                android:textSize="15sp"
+                android:text="Tablets"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:drawablePadding="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/record_symptoms"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/andika_new_basic"
+
+                android:padding="8dp"
+                android:textSize="15sp"
+                android:text="Symptoms"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:drawablePadding="8dp"/>
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

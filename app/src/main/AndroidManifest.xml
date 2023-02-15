@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FirebaseDemo"
+        tools:targetApi="31">
+        <activity
+            android:name=".TurnOnRideMode"
+            android:exported="false" />
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ShowRecords2"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionPage"
+            android:exported="false" />
+        <activity
+            android:name=".SendMail"
+            android:exported="false" />
+        <activity
+            android:name=".BloodCommunity"
+            android:exported="false" />
+        <activity
+            android:name=".IdentifyVictim"
+            android:exported="false" />
+        <activity
+            android:name=".Reports"
+            android:exported="false" />
+        <activity
+            android:name=".UploadReport"
+            android:exported="false" />
+        <activity
+            android:name=".ShowRecords"
+            android:exported="false" />
+        <activity
+            android:name=".SearchTablet"
+            android:exported="false" />
+        <activity
+            android:name=".MainDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorTask3"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorTask2"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorTask"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorLogin"
+            android:exported="false" />
+        <activity
+            android:name=".LandupPage"
+            android:exported="false"
+            android:label="@string/title_activity_landup_page"
+            android:theme="@style/Theme.FirebaseDemo.NoActionBar" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
