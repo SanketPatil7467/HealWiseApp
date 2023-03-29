@@ -74,8 +74,7 @@ public class UploadReport extends AppCompatActivity {
         progressDialog.show();
 
         StorageReference reference = storageReference.child("Uploads/"+System.currentTimeMillis()+".pdf");
-        reference.putFile(data)
-                .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+        reference.putFile(data).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
                         Task<Uri> uriTask = taskSnapshot.getStorage().getDownloadUrl();
